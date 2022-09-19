@@ -1,0 +1,128 @@
+/* Write your CSS here */
+.app-container {
+  padding: 10px 80px;
+  min-height: 100vh;
+}
+.welcome-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/money-manager/money-manager-bg.png');
+  background-size: cover;
+  padding: 10px 30px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.welcome-heading {
+  font-family: Roboto;
+  font-size: 40px;
+  color: #475569;
+}
+.welcome-quote {
+  font-family: Roboto;
+  font-size: 25px;
+  color: #475569;
+}
+.welcome-quote-highlight {
+  color: #0b69ff;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  .app-container {
+    padding: 5px 10px;
+  }
+  .welcome-container {
+    text-align: center;
+  }
+  .welcome-heading {
+    font-size: 30px;
+  }
+  .welcome-quote {
+    font-size: 15px;
+  }
+}
+
+.transactions-container {
+  display: flex;
+  justify-content: space-between;
+}
+.add-transaction-container {
+  border: 2px solid #cbd5e1;
+  border-radius: 20px;
+  padding: 20px 50px;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-right: 20px;
+}
+
+.add-transaction-heading {
+  font-family: Roboto;
+  font-size: 25px;
+  color: #475569;
+}
+.label {
+  font-family: Roboto;
+  font-size: 15px;
+  color: #7e858e;
+}
+.input {
+  width: 100%;
+  border: 2px solid #d7dfe9;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  outline: none;
+}
+.add-button {
+  font-family: Roboto;
+  font-size: 15px;
+  color: #ffffff;
+  padding: 5px 20px;
+  background-color: #0b69ff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  align-self: flex-start;
+}
+
+.history-container {
+  border: 2px solid #cbd5e1;
+  border-radius: 20px;
+  padding: 20px 50px;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.history-list-container {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.history-log-heading-container {
+  display: flex;
+  border: 2px solid #d7dfe9;
+  padding: 5px 20px;
+}
+.history-log-heading {
+  width: 30%;
+  font-family: Roboto;
+  font-size: 16px;
+  color: #475569;
+}
+
+@media (max-width: 768px) {
+  .transactions-container {
+    flex-direction: column;
+  }
+  .add-transaction-container {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 5px 20px 20px 20px;
+  }
+  .history-container {
+    width: 100%;
+    padding: 5px 20px 20px 20px;
+  }
+}
